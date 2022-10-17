@@ -15,3 +15,6 @@ There are a number of classes that assist in the development of a swerve drive. 
     * [SwerveModuleState](https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveModuleState.html) - Represents the state of a module.
     * [SwerveDriveOdometry](https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/SwerveDriveOdometry.html) - Allows you to track the robots position in the field.  Estimate the robots position from swerve drive encoders and swerve azimuth encoders.
     * [SwerveDrivePoseEstimator](https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/math/estimator/SwerveDrivePoseEstimator.html) - More accurate version of swerve drive odometry. 
+  * Examples and Tutorials
+    * WPILIB has a few examples and tutorial projects that may be a good starting point.  
+    * Other FRC teams have posted code on github that may be useful examples.
