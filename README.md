@@ -18,3 +18,9 @@ There are a number of classes that assist in the development of a swerve drive. 
   * Examples and Tutorials
     * WPILIB has a few examples and tutorial projects that may be a good starting point.  
     * Other FRC teams have posted code on github that may be useful examples.
+
+# Example
+
+An example is included [here]().  This example is one of the examples included in vscode from WPILIB.  It has been modified to export servemodule details from the SwerveModule to the network table.  This allows live parameters to be shown in the table and visualized with shufleboard.  The program can be run using the SimGui.  To visualize the swerve module state there is a shuffleboard.json file with a tab configured to display the parameters.  Make sure that the joystick controls are properly mapped in the RobotContainer.
+
+  * The example comes with a **DriveSubsystem.java** and **SwerveModule.java** classes that may be a good foundation for a functioning drivetrain.  These classes use **Spark** motors and these will probably need to be updated to Neo.
