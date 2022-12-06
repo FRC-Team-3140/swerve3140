@@ -21,6 +21,13 @@ There are a number of classes that assist in the development of a swerve drive. 
 
 # Example
 
-An example is included [here]().  This example is one of the examples included in vscode from WPILIB.  It has been modified to export servemodule details from the SwerveModule to the network table.  This allows live parameters to be shown in the table and visualized with shufleboard.  The program can be run using the SimGui.  To visualize the swerve module state there is a shuffleboard.json file with a tab configured to display the parameters.  Make sure that the joystick controls are properly mapped in the RobotContainer.
+An example is included [here](examples/swerve_example).  This example is one of the examples included in vscode from WPILIB.  It has been modified to export servemodule details from the SwerveModule to the network table.  This allows live parameters to be shown in the table and visualized with shuffleboard.  The program can be run using the SimGui.  To visualize the swerve module state there is a **shuffleboard.json** file with a tab configured to display the parameters.  Make sure that the joystick controls are properly mapped in the RobotContainer.
 
   * The example comes with a **DriveSubsystem.java** and **SwerveModule.java** classes that may be a good foundation for a functioning drivetrain.  These classes use **Spark** motors and these will probably need to be updated to Neo.
+  * The joystick should be mapped such that the left stick controls forward/backward motion plus strafe.  The right stick controls the rotation.
+  * The code seems to be inefficient in some cases.  For example in some cases the swerve module angles are turned completely around when the wheels could just be reversed.  The swerve modules also seem to engage the drive wheels when the angles are still adjusting and at a bad angle.  There could be some room for improvement.
+  * It also may be useful to mimic the interface for simpler drives to make some controls or autonomous commands easier (i.e. tank drive, arcade drive).  
+  * **Advanced:** There may be opportunities for more advanced control.
+    * Spin the chassis to get out of blocks.
+    * Rotate the chassis but keep the direction of motion unchanged. Keep the chassis aimed at a target while the translation motion is independent.
+    * More advanced motion may complicate control for the drive.  How can advanced maneuvers be accomplished but keep the controls simple and intuitive.
