@@ -54,6 +54,18 @@
         "open": true
       },
       "open": true
+    },
+    "apriltags": {
+      "mbp_apriltag": {
+        "open": true,
+        "tags": {
+          "open": true,
+          "tag_000": {
+            "open": true
+          }
+        }
+      },
+      "open": true
     }
   }
 }

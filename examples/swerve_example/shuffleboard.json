@@ -21,6 +21,50 @@
               "_source0": "network_table:///SmartDashboard/SendableChooser[0]",
               "_title": "SendableChooser[0]"
             }
+          },
+          "1,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Basic Subsystem",
+              "_source0": "network_table:///SmartDashboard/SwerveModule",
+              "_title": "SwerveModule"
+            }
+          },
+          "3,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Basic Subsystem",
+              "_source0": "network_table:///SmartDashboard/PowerManagment",
+              "_title": "PowerManagment"
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "ComboBox Chooser",
+              "_source0": "network_table:///SmartDashboard/Auto Mode",
+              "_title": "Auto Mode"
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/Autonomous Command",
+              "_title": "Autonomous Command"
+            }
           }
         }
       }
@@ -385,6 +429,129 @@
               "Layout/Label position": "BOTTOM",
               "_children": []
             }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/TotalCurrent",
+              "_title": "PowerManagment/PowerDistribution 1/TotalCurrent"
+            }
+          },
+          "8,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/SwerveModule/turn_value",
+              "_title": "SwerveModule/turn_value"
+            }
+          },
+          "0,4": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Motor Controller",
+              "_source0": "network_table:///LiveWindow/SwerveModule/TurnMotor",
+              "_title": "SwerveModule/TurnMotor",
+              "Visuals/Orientation": "HORIZONTAL"
+            }
+          },
+          "8,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/SwerveModule/cancoder_abs_position",
+              "_title": "SwerveModule/cancoder_abs_position"
+            }
+          },
+          "2,4": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Motor Controller",
+              "_source0": "network_table:///LiveWindow/SwerveModule/DriveMotor",
+              "_title": "SwerveModule/DriveMotor",
+              "Visuals/Orientation": "HORIZONTAL"
+            }
+          },
+          "8,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan10",
+              "_title": "PowerManagment/PowerDistribution 1/Chan10"
+            }
+          },
+          "4,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan13",
+              "_title": "PowerManagment/PowerDistribution 1/Chan13"
+            }
+          },
+          "5,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan11",
+              "_title": "PowerManagment/PowerDistribution 1/Chan11"
+            }
+          },
+          "6,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan12",
+              "_title": "PowerManagment/PowerDistribution 1/Chan12"
+            }
+          },
+          "7,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan14",
+              "_title": "PowerManagment/PowerDistribution 1/Chan14"
+            }
+          },
+          "8,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/PowerManagment/PowerDistribution 1/Chan15",
+              "_title": "PowerManagment/PowerDistribution 1/Chan15"
+            }
           }
         }
       }
@@ -535,12 +702,164 @@
           }
         }
       }
+    },
+    {
+      "title": "SwerveModule",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "titleType": 0,
+        "tiles": {
+          "7,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///LiveWindow/SwerveModule/cancoder_abs_position",
+              "_title": "CanCoder Angle",
+              "Range/Min": 0.0,
+              "Range/Max": 360.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "7,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///LiveWindow/SwerveModule/cancoder_velocity",
+              "_title": "CanCoder Velocity",
+              "Range/Min": -180.0,
+              "Range/Max": 180.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "8,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/SwerveModule/drive_position",
+              "_title": "Drive Position"
+            }
+          },
+          "4,3": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///LiveWindow/SwerveModule/drive_velocity",
+              "_title": "Drive Motor Velocity",
+              "Range/Min": -1000.0,
+              "Range/Max": 1000.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "7,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///LiveWindow/SwerveModule/turn_position",
+              "_title": "Turn Position"
+            }
+          },
+          "1,3": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///LiveWindow/SwerveModule/turn_velocity",
+              "_title": "Turn Motor Velocity",
+              "Range/Min": -1000.0,
+              "Range/Max": 1000.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "7,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///LiveWindow/SwerveModule/drive_value",
+              "_title": "Drive Motor Value",
+              "Range/Min": -1.0,
+              "Range/Max": 1.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "1,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///LiveWindow/SwerveModule/cancoder_abs_position",
+              "_title": "Turn Angle",
+              "Graph/Visible time": 30.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": false,
+              "Y-axis/Upper bound": 360.0,
+              "Y-axis/Lower bound": 0.0,
+              "Y-axis/Unit": "degrees",
+              "Visible data/LiveWindow/SwerveModule/cancoder_abs_position": true
+            }
+          },
+          "4,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///LiveWindow/SwerveModule/drive_velocity",
+              "_title": "Drive Velocity",
+              "Graph/Visible time": 30.0,
+              "Graph/X-axis auto scrolling": true,
+              "Y-axis/Automatic bounds": false,
+              "Y-axis/Upper bound": 1000.0,
+              "Y-axis/Lower bound": -1000.0,
+              "Y-axis/Unit": "Speed",
+              "Visible data/LiveWindow/SwerveModule/drive_velocity": true
+            }
+          }
+        }
+      }
     }
   ],
   "windowGeometry": {
-    "x": 1739.0,
-    "y": 473.0,
-    "width": 1288.0,
-    "height": 688.0
+    "x": 0.0,
+    "y": 25.0,
+    "width": 1385.0,
+    "height": 845.0
   }
 }
